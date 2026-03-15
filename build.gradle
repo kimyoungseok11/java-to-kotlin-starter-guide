@@ -1,10 +1,15 @@
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.5.30'
+    id 'org.jetbrains.kotlin.jvm' version '1.9.25'
     id 'java'
 }
 
 group 'org.example'
 version '1.0-SNAPSHOT'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
 
 repositories {
     mavenCentral()
@@ -14,6 +19,14 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib"
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "21"
+}
+
+compileTestKotlin {
+    kotlinOptions.jvmTarget = "21"
 }
 
 test {
