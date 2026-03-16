@@ -28,7 +28,7 @@ fun main() {
 }
 
 // is는 자바의 instanceof
-// as? -> obj가 null이 아나리면 뒤에 있는 Person이 됨
+// as? -> obj가 null이 아나리면 뒤에 있는 타입으로 형변환
 // Any는 java의 Object 타입
 // Unit은 java의 void와 동일
 // Nothing은 함수가 정상적으로 끝나지 않았다는 사실을 표현
