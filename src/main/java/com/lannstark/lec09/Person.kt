@@ -39,9 +39,9 @@ class Person(
         println("부생성자 1")
     }
 
-    fun isAdult(): Boolean {
-        return this.age >= 20
-    }
+//    fun isAdult(): Boolean {
+//        return this.age >= 20
+//    }
 
     //메소드를 프로퍼티 처럼 만들 수 있음
     val isAdult: Boolean
